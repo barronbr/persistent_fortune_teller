@@ -28,4 +28,8 @@ Rails.application.routes.draw do
 
   get("/signs/:the_sign",         { :controller => "zodiacs", :action => "sign" })
   get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
+
+  get("/horoscope", { :controller => "zodiacs", :action => "new_form" })
+
+  get("/process_form", { :controller => "zodiacs", :action => "add_row" })
 end
